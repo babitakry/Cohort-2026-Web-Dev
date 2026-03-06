@@ -25,11 +25,17 @@ let galgotia = {
     }
 };
 
-console.log(galgotia);
-console.log(String(galgotia));
-console.log(Number(galgotia)); // NaN
+// console.log(galgotia);
+// console.log(String(galgotia));
+// console.log(Number(galgotia)); // NaN
 
 
 // hint : "string" ---> toString()
 // hint : "number" ----> valueOf()
 
+
+function randomNumber(start, end){
+    return start + Math.random() * (end-start);
+}
+
+console.log(randomNumber(5, 10));
